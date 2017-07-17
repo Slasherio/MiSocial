@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../fonts/RobotoBold/RobotoBold.eot") format("eot"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot") format("eot"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  overflow-x: hidden; }
+
+/************HEADER************/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background: url("../img/bg_fon.jpg") center;
+  background-size: cover;
+  position: relative; }
+
+.header-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: .8;
+  background-image: linear-gradient(150deg, #6e45e2 0%, #88d3ce 100%); }
+
+.navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  width: 90%;
+  position: relative;
+  z-index: 8; }
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+  .navigation__elem {
+    margin-right: 30px; }
+  .navigation__link {
+    font: 700 15px/15px Maven Pro;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(225, 225, 225, 0);
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    padding: 10px; }
+    .navigation__link span {
+      text-transform: uppercase; }
+    .navigation__link:hover {
+      border-bottom: 1px solid #e1e1e1;
+      -webkit-transition: .3s ease-out;
+      transition: .3s ease-out; }
+  .navigation__btn {
+    font: 700 14px Maven Pro;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out;
+    margin-left: 30px; }
+    .navigation__btn:hover {
+      color: #fff;
+      background-color: #756edc;
+      -webkit-transition: .5s ease-out;
+      transition: .5s ease-out; }
+
+.header-intro {
+  position: relative;
+  z-index: 8;
+  text-align: center;
+  color: #fff; }
+  .header-intro span {
+    font: 700 14px/14px Maven Pro;
+    text-transform: uppercase;
+    position: relative; }
+    .header-intro span::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -35px;
+      height: 1px;
+      width: 20px;
+      background-color: #fff; }
+    .header-intro span::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -35px;
+      height: 1px;
+      width: 20px;
+      background-color: #fff; }
+  .header-intro h1 {
+    font-size: 80px;
+    color: #fff;
+    margin: 0; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
