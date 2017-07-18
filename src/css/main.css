@@ -16,7 +16,6 @@ body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
-  line-height: 1.75;
   overflow-x: hidden; }
 
 /************HEADER************/
@@ -131,6 +130,164 @@ header {
     font-size: 80px;
     color: #fff;
     margin: 0; }
+  .header-intro p {
+    font: 300 16px/30px Maven Pro;
+    color: #fff; }
+
+.arrow {
+  width: 17px;
+  height: 18px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+          box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  z-index: 9; }
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite; }
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px); } }
+
+/************PRICING CARDS************/
+.cards {
+  padding: 90px 60px;
+  background-color: #f9fafc; }
+  .cards-description {
+    text-align: center; }
+    .cards-description span {
+      text-transform: uppercase;
+      font: 700 14px/16px Maven Pro;
+      position: relative;
+      color: #c2c9db; }
+      .cards-description span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -40px;
+        width: 24px;
+        height: 1px;
+        background-color: #6e45e2; }
+      .cards-description span:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -40px;
+        width: 24px;
+        height: 1px;
+        background-color: #6e45e2; }
+    .cards-description h1 {
+      font: 400 60px/72px Maven Pro;
+      color: #4f4f6f;
+      margin: 0; }
+    .cards-description p {
+      font: 400 16px/28px Maven Pro;
+      color: #c2c9db; }
+  .cards-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 70px; }
+  .cards__item {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid #d3d7e6;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out; }
+    .cards__item:hover {
+      -webkit-transition: .5s ease-out;
+      transition: .5s ease-out;
+      -webkit-box-shadow: 0px 0px 60px 10px rgba(204, 204, 233, 0.71);
+              box-shadow: 0px 0px 60px 10px rgba(204, 204, 233, 0.71);
+      border: 1px solid #fff; }
+    .cards__item span {
+      font: 700 14px/15px Maven Pro;
+      color: #c2c9db;
+      text-transform: uppercase;
+      margin-top: 60px; }
+    .cards__item h4 {
+      font: 500 60px/35px Maven Pro;
+      margin: 25px 0 40px 0;
+      color: #4f4f6f; }
+      .cards__item h4 sup {
+        vertical-align: super;
+        margin-right: 5px;
+        font-size: 14px; }
+      .cards__item h4 sub {
+        font: 400 18px/18px Maven Pro; }
+    .cards__item p {
+      width: 63%;
+      text-align: center;
+      font: 400 16px/25px Maven Pro;
+      color: #c2c9db; }
+    .cards__item .btn {
+      border: 1px solid #c2c9db;
+      background-color: #fff;
+      border-radius: 30px;
+      padding: 15px 60px;
+      cursor: pointer;
+      -webkit-transition: .5s ease-out;
+      transition: .5s ease-out;
+      -webkit-box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+              box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+      text-transform: uppercase;
+      text-decoration: none;
+      font: 700 12px/16px Maven Pro;
+      color: #c2c9db;
+      margin: 20px 0 40px 0; }
+      .cards__item .btn:hover {
+        color: #fff;
+        background-color: #6e45e2; }
+    .cards__item_img {
+      margin-top: 30px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
