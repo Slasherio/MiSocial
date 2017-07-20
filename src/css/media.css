@@ -1,71 +1,97 @@
 @media only screen and (max-width: 1200px) {
-  .navigation,
-  .footer-menu {
-    width: 100%; }
+    .navigation,
+    .footer-menu {
+        width: 100%;
+    }
     .navigation__elem,
     .footer-menu__elem {
-      margin-right: 20px; }
+        margin-right: 20px;
+    }
     .navigation__link,
     .footer-menu__link {
-      font: 500 14px/14px Maven Pro; }
-  .cards__item p {
-    width: 85%;
-    font: 400 14px/25px Maven Pro; }
-  .info h4 {
-    font: 500 50px/36px Maven Pro; } }
+        font: 500 14px/14px Maven Pro;
+    }
+    .cards__item p {
+        width: 85%;
+        font: 400 14px/25px Maven Pro;
+    }
+    .info h4 {
+        font: 500 50px/36px Maven Pro;
+    }
+}
 
 @media only screen and (max-width: 992px) {
-  .navigation__list {
-    display: none; }
-  .burger-menu {
-    display: block; }
-  .header-intro h1 {
-    font-size: 70px; } }
+    .navigation__list {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .header-intro h1 {
+        font-size: 70px;
+    }
+}
 
 @media only screen and (max-width: 882px) {
-  .cards-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    .cards-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
+        flex-direction: column;
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
+        justify-content: center;
+        -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-  .cards__item {
-    width: 70%;
-    margin-bottom: 20px; }
-  .info h4 {
-    font: 500 40px/36px Maven Pro; }
-  .footer-menu {
-    -webkit-box-pack: center;
+        align-items: center;
+    }
+    .cards__item {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .info h4 {
+        font: 500 40px/36px Maven Pro;
+    }
+    .footer-menu {
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-  .footer-menu__list {
-    display: none; } }
+        justify-content: center;
+    }
+    .footer-menu__list {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 741px) {
-  .footer-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    .footer-info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+        flex-direction: column;
+    }
     .footer-info__social {
-      padding: 20px 0; }
-  .info__button {
-    margin: 20px 5px;
-    padding: 20px 30px; } }
+        padding: 20px 0;
+    }
+    .info__button {
+        margin: 20px 5px;
+        padding: 20px 30px;
+    }
+}
 
 @media only screen and (max-width: 501px) {
-  .header-intro span {
-    font: 700 12px/14px Maven Pro; }
-  .header-intro h1 {
-    font-size: 50px; }
-  .header-intro p {
-    font: 300 15px/30px Maven Pro; }
-  .cards-description p {
-    font: 400 14px/28px Maven Pro; }
-  .cards__item {
-    width: 100%; } }
+    .header-intro span {
+        font: 700 12px/14px Maven Pro;
+    }
+    .header-intro h1 {
+        font-size: 50px;
+    }
+    .header-intro p {
+        font: 300 15px/30px Maven Pro;
+    }
+    .cards-description p {
+        font: 400 14px/28px Maven Pro;
+    }
+    .cards__item {
+        width: 100%;
+    }
+}

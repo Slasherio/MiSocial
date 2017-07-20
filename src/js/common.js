@@ -5,6 +5,5 @@ $(document).ready(function() {
         $('.burger__elem').click(function(e) {
             $(".burger-menu").toggleClass("menu-on");
             $('.burger-list').fadeToggle('burger-list-active');
-        });
-    });
+        });});
 });
