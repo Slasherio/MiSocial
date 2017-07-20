@@ -336,7 +336,7 @@ header {
 /************INFO************/
 .info {
   background: url("../img/map.jpg") center;
-  padding: 150px;
+  padding: 150px 0;
   background-size: cover;
   position: relative; }
   .info__content {

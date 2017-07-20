@@ -17,6 +17,7 @@ body {
 
 
 
+
 /************HEADER************/
 
 header {
@@ -89,6 +90,7 @@ header {
         }
     }
 }
+
 
 
 
@@ -216,6 +218,7 @@ header {
         transform: translateY(-15px);
     }
 }
+
 
 
 
@@ -364,11 +367,12 @@ header {
 
 
 
+
 /************INFO************/
 
 .info {
     background: url('../img/map.jpg') center;
-    padding: 150px;
+    padding: 150px 0;
     background-size: cover;
     position: relative;
     &__content {
@@ -404,6 +408,7 @@ header {
         }
     }
 }
+
 
 
 
