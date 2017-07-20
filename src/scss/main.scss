@@ -18,6 +18,29 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************HEADER************/
 
 header {
@@ -97,6 +120,30 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************BURGER************/
 
 .burger-menu {
@@ -107,6 +154,7 @@ header {
     right: 25px;
     width: 30px;
     height: 25px;
+    cursor: pointer;
 }
 
 .burger,
@@ -147,6 +195,54 @@ header {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************BURGER NAVIGATION (ADAPTIVE)************/
+
+.burger-list {
+    position: absolute;
+    background-color: rgba(110, 69, 226, .9);
+    list-style: none;
+    top: 80px;
+    width: 100%;
+    z-index: 99;
+    &__elem {
+        text-align: center;
+        padding: 20px;
+    }
+    &__link {
+        font: 500 16px/14px Maven Pro;
+        color: $default_color;
+        text-decoration: none;
+    }
+    &-active {
+        display: none;
+    }
+}
 
 .header-intro {
     position: relative;
@@ -218,6 +314,31 @@ header {
         transform: translateY(-15px);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -363,11 +484,6 @@ header {
 
 
 
-
-
-
-
-
 /************INFO************/
 
 .info {
@@ -408,6 +524,37 @@ header {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

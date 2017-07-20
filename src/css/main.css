@@ -109,7 +109,8 @@ header {
   z-index: 9;
   right: 25px;
   width: 30px;
-  height: 25px; }
+  height: 25px;
+  cursor: pointer; }
 
 .burger,
 .burger::before,
@@ -144,6 +145,24 @@ header {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 0px; }
+
+/************BURGER NAVIGATION (ADAPTIVE)************/
+.burger-list {
+  position: absolute;
+  background-color: rgba(110, 69, 226, 0.9);
+  list-style: none;
+  top: 80px;
+  width: 100%;
+  z-index: 99; }
+  .burger-list__elem {
+    text-align: center;
+    padding: 20px; }
+  .burger-list__link {
+    font: 500 16px/14px Maven Pro;
+    color: #fff;
+    text-decoration: none; }
+  .burger-list-active {
+    display: none; }
 
 .header-intro {
   position: relative;
