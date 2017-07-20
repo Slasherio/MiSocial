@@ -17,31 +17,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /************HEADER************/
 
 header {
@@ -118,6 +93,8 @@ header {
 
 
 
+
+
 /************BURGER************/
 
 .burger-menu {
@@ -125,7 +102,7 @@ header {
     display: none;
     top: 24px;
     z-index: 9;
-    right: 75px;
+    right: 25px;
     width: 30px;
     height: 25px;
 }
@@ -239,6 +216,8 @@ header {
         transform: translateY(-15px);
     }
 }
+
+
 
 
 
@@ -383,6 +362,8 @@ header {
 
 
 
+
+
 /************INFO************/
 
 .info {
@@ -423,6 +404,8 @@ header {
         }
     }
 }
+
+
 
 
 
