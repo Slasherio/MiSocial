@@ -13,6 +13,35 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************HEADER************/
 
 header {
@@ -27,7 +56,7 @@ header {
     position: relative;
 }
 
-.header-overlay {
+.overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -43,7 +72,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
-    width: 90%;
+    width: 95%;
     position: relative;
     z-index: 8;
     &__list {
@@ -85,6 +114,60 @@ header {
         }
     }
 }
+
+
+
+
+/************BURGER************/
+
+.burger-menu {
+    position: absolute;
+    display: none;
+    top: 24px;
+    z-index: 9;
+    right: 75px;
+    width: 30px;
+    height: 25px;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    display: block;
+    transition: all .3s ease-in-out;
+}
+
+.burger {
+    top: 50%;
+    right: 0;
+    opacity: 1;
+    &::before {
+        content: "";
+        top: 8px;
+    }
+    &::after {
+        content: "";
+        bottom: 8px;
+    }
+}
+
+.burger-menu.menu-on .burger {
+    background: rgba(111, 111, 111, .0);
+    &::after {
+        transform: rotate(-45deg);
+        bottom: 0px;
+    }
+    &::before {
+        transform: rotate(45deg);
+        top: 0px;
+    }
+}
+
 
 .header-intro {
     position: relative;
@@ -156,6 +239,7 @@ header {
         transform: translateY(-15px);
     }
 }
+
 
 
 /************PRICING CARDS************/
@@ -269,4 +353,167 @@ header {
     }
 }
 
-@import "media"; // Always at the end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************INFO************/
+
+.info {
+    background: url('../img/map.jpg') center;
+    padding: 150px;
+    background-size: cover;
+    position: relative;
+    &__content {
+        text-align: center;
+        position: relative;
+        z-index: 9;
+        span {
+            color: $default_color;
+            font: 700 14px/16px Maven Pro;
+            text-transform: uppercase;
+        }
+        h4 {
+            font: 500 60px/36px Maven Pro;
+            margin: 20px;
+            color: $default_color;
+        }
+    }
+    &__button {
+        display: inline-block;
+        background-color: $default_color;
+        border-radius: 100px;
+        padding: 20px 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $grey;
+        font: 700 12px/16px Maven Pro;
+        margin: 20px 10px;
+        transition: .3s ease-out;
+        box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+        &:hover {
+            background-color: $hover_button;
+            color: $default_color;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************FOOTER************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 25px 0;
+    border-bottom: 1px solid $grey;
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+    &__elem {
+        margin-right: 40px;
+    }
+    &__link {
+        color: $dark_grey;
+        text-decoration: none;
+        font: 500 14px/14px Maven Pro;
+        &:hover {
+            color: $light_purple;
+        }
+    }
+    &__btn {
+        font: 700 14px Maven Pro;
+        color: $default_color;
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 15px 40px;
+        background-color: $light_purple;
+        text-transform: uppercase;
+        margin-left: 30px;
+    }
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-top: 20px;
+    p {
+        font: 500 14px/16px Maven Pro;
+        color: $dark_grey;
+    }
+    &__social a {
+        color: $dark_grey;
+        margin-right: 10px;
+        text-decoration: none;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $hover_button;
+        }
+    }
+}

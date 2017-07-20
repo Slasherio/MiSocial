@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!--Main Css-->
     <link rel="stylesheet" href="css/main.css">
+    <!--Adaptive-->
+    <link rel="stylesheet" href="css/media.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--In many cases, exactly what will be indicated here will be displayed by the search engines in the query results. A very important meta tag.-->
     <meta name="description" content="description">
     <!--Fonts-->
@@ -32,7 +36,7 @@
 <body>
     <!--BEGIN: HEADER-->
     <header>
-        <div class="header-overlay"></div>
+        <div class="overlay"></div>
         <nav class="navigation">
             <div class="navigation__logo">
                 <img src="img/logo.png" alt="MiSocial">
@@ -46,26 +50,30 @@
                 <li class="navigation__elem"><a class="navigation__btn " href="#">Get Started</a></li>
             </ul>
         </nav>
+        <div class="burger-menu">
+            <span class="burger"></span>
+        </div>
         <div class="header-intro">
             <span>Social marketing &#38; analytics</span>
             <h1>Pricing Table</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt ut.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                <br> sed do eiusmod tempor incididunt ut.</p>
         </div>
         <!--SVG ARROW-->
         <div class="arrow bounce">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 21.825 21.825" style="enable-background:new 0 0 21.825 21.825;" xml:space="preserve">
-        <path style="fill: rgb(158, 163, 173);" d="M16.791,13.254c0.444-0.444,1.143-0.444,1.587,0c0.429,0.444,0.429,1.143,0,1.587l-6.65,6.651  c-0.206,0.206-0.492,0.333-0.809,0.333c-0.317,0-0.603-0.127-0.81-0.333l-6.65-6.651c-0.444-0.444-0.444-1.143,0-1.587  s1.143-0.444,1.587,0l4.746,4.762V1.111C9.791,0.492,10.299,0,10.918,0c0.619,0,1.111,0.492,1.111,1.111v16.904L16.791,13.254z"></path>
-      </svg>
+                <path style="fill: rgb(158, 163, 173);" d="M16.791,13.254c0.444-0.444,1.143-0.444,1.587,0c0.429,0.444,0.429,1.143,0,1.587l-6.65,6.651  c-0.206,0.206-0.492,0.333-0.809,0.333c-0.317,0-0.603-0.127-0.81-0.333l-6.65-6.651c-0.444-0.444-0.444-1.143,0-1.587  s1.143-0.444,1.587,0l4.746,4.762V1.111C9.791,0.492,10.299,0,10.918,0c0.619,0,1.111,0.492,1.111,1.111v16.904L16.791,13.254z"></path>
+            </svg>
         </div>
     </header>
     <!--END: HEADER-->
-
     <!--BEGIN:PRICING CARD-->
     <section class="cards">
         <div class="cards-description">
             <span>Misocial</span>
             <h1>Select a Plan</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br> sed do eiusmod tempor incididunt ut.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                <br> sed do eiusmod tempor incididunt ut.</p>
         </div>
         <div class="cards-wrapper">
             <div class="cards__item">
@@ -98,6 +106,47 @@
         </div>
     </section>
     <!--END:PRICING CARD-->
+    <!--BEGIN: INFO-->
+    <section class="info">
+        <div class="overlay"></div>
+        <div class="info__content">
+            <span>Social marketing &#38; analytics</span>
+            <h4>Take control of your data</h4>
+            <a href="#" class="info__button">Get Started</a>
+            <a href="#" class="info__button">Explore Features</a>
+        </div>
+    </section>
+    <!--END: INFO-->
+    <!--BEGIN: FOOTER-->
+    <footer>
+        <div class="footer-menu">
+            <div class="footer-menu__logo">
+                <img src="img/footer-logo.png" alt="MiSocial">
+            </div>
+            <ul class="footer-menu__list">
+                <li class="footer-menu__elem"><a class="footer-menu__link" href="#">Home</a></li>
+                <li class="footer-menu__elem"><a class="footer-menu__link" href="#">Why <span>MiSocial</span></a></li>
+                <li class="footer-menu__elem"><a class="footer-menu__link" href="#">Features</a></li>
+                <li class="footer-menu__elem"><a class="footer-menu__link" href="#">Articles</a></li>
+                <li class="footer-menu__elem"><a class="footer-menu__link" href="#">Pricing</a></li>
+                <li class="footer-menu__elem"><a class="footer-menu__btn" href="#">Get Started</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2017 Mass Impressions & Tranmautritam. Make the right impression.</p>
+            <div class="footer-info__social">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+</a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
+</a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+</a>
+            </div>
+        </div>
+    </footer>
+    <!--END: FOOTER-->
     <script src="js/scripts.min.js"></script>
     <script src="js/common.js"></script>
 </body>
