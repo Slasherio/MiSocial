@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'), // for minification
     del = require('del'), // for deleting folder dist before bulding
     imagemin = require('gulp-imagemin'), //for optimization images
-    autoprefixer = require('gulp-autoprefixer'), //for adding prefixer
+    autoprefixer = require('gulp-autoprefixer'),
+    htmlmin = require('gulp-htmlmin'), //for adding prefixer
     jshint = require('gulp-jshint'); // for javascript files
 
 //Task for from sass to css
@@ -45,8 +46,8 @@ gulp.task('browser-sync', function() {
             baseDir: 'src' //directory for server 
         },
         notify: false //disable notification about reloading
-            // tunnel: true,
-            // tunnel: "projectname", //Demonstration page: http://projectname.localtunnel.me
+        // tunnel: true,
+        // tunnel: "projectname", //Demonstration page: http://projectname.localtunnel.me
     });
 });
 
@@ -79,6 +80,7 @@ gulp.task('build', ['clean', 'sass', 'js'],
             .pipe(gulp.dest('dest/js'))
 
         var buildHtml = gulp.src('src/*.html') //Dest html in production
+            .pipe(htmlmin({ collapseWhitespace: true }))
             .pipe(gulp.dest('dest'));
     });
 
