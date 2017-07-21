@@ -91,6 +91,9 @@
         }
     }
     .cards {
+        &-wrapper {
+            padding: 90px 30px;
+        }
         &-description {
             p {
                 font: 400 14px/28px Maven Pro;
