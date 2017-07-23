@@ -29,11 +29,12 @@ gulp.task('hint', function() {
 //Task for minify our script libs and concat their into one file
 gulp.task('js', function() {
     return gulp.src([
-            'src/libs/jquery/dist/jquery.min.js'
+            'src/libs/jquery/dist/jquery.min.js',
+            'src/libs/wow/dist/wow.min.js'
             //To Do: ADD NEW LIBS
         ])
         .pipe(concat('scripts.min.js'))
-        .pipe(uglify()) // if you want!
+        // .pipe(uglify()) // if you want!
         .pipe(gulp.dest('src/js'))
         .pipe(browserSync.reload({ stream: true }));
 });
@@ -43,7 +44,7 @@ gulp.task('js', function() {
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: 'src' //directory for server 
+            baseDir: 'src' //directory for server
         },
         notify: false //disable notification about reloading
         // tunnel: true,
