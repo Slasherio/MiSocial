@@ -7,4 +7,11 @@ $(document).ready(function() {
             $('.burger-list').fadeToggle('burger-list-active');
         });
     });
+
+    //Arrow down scrolling
+    $('.arrow').click(function(){
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 1200);
+      });
 });
