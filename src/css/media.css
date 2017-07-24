@@ -65,9 +65,11 @@
     font-size: 50px; }
   .header-intro p {
     font: 300 15px/30px Maven Pro; }
-  .cards-wrapper {
-    padding: 90px 30px; }
-  .cards-description p {
-    font: 400 14px/28px Maven Pro; }
-  .cards__item {
-    width: 100%; } }
+  .cards {
+    padding: 90px 20px; }
+    .cards-wrapper {
+      padding: 90px 20px; }
+    .cards-description p {
+      font: 400 14px/28px Maven Pro; }
+    .cards__item {
+      width: 100%; } }
